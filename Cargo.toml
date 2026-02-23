@@ -1,0 +1,25 @@
+[package]
+name = "fast-bump"
+version = "0.1.0"
+authors = ["Yuriy Krasilnikov <YuriyKrasilnikov@users.noreply.github.com>"]
+edition = "2024"
+rust-version = "1.93"
+license = "Apache-2.0"
+repository = "https://github.com/YuriyKrasilnikov/fast-bump"
+homepage = "https://github.com/YuriyKrasilnikov/fast-bump"
+documentation = "https://docs.rs/fast-bump"
+readme = "README.md"
+description = "Fast typed arena — contiguous, concurrent FastArena with lock-free alloc, immediate &T, &[T] slices"
+categories = ["memory-management", "data-structures"]
+keywords = ["arena", "allocator", "bump", "memory", "concurrent"]
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+
+[lints.clippy]
+all = "deny"
+pedantic = "deny"
+nursery = "deny"
+
+[dev-dependencies]
+proptest = "1.10.0"
